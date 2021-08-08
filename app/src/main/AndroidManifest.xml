@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unicofox.greencasket">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:name=".App"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Splash.Splash"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Activity.ProductViewActivity"/>
+
+        <activity android:name=".Activity.SignUpActivity" android:theme="@style/Splash"/>
+
+        <activity android:name=".Activity.MainActivity"/>
+
+        <activity android:name=".Activity.LoginActivity" android:theme="@style/Splash"/>
+
+        <activity android:name=".Activity.CartActivity"/>
+
+        <activity android:name=".Activity.OrdersActivity"/>
+
+        <activity android:name=".Activity.SearchActivity"/>
+
+    </application>
+
+</manifest>

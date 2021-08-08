@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="3dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/container_labels"
+        android:layout_marginRight="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Sub total:"
+            android:id="@+id/text_sub_total"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/tv_sub_total"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST (15%):"
+            android:textSize="13sp"
+            android:layout_below="@id/text_sub_total"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_tax"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_sub_total"
+            android:textColor="#000000"
+            android:id="@+id/tv_tax"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDBDBD"
+            android:layout_below="@id/tv_tax"
+            android:id="@+id/divider"
+            android:layout_marginTop="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/divider"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textSize="13sp"
+                android:id="@+id/text_total"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#000000"
+                android:id="@+id/tv_total"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorOnPrimary"
+        android:id="@+id/btn_place_order"
+        android:layout_below="@id/container_labels"
+        android:layout_marginTop="8dp"
+        android:text="Place Your Order"/>
+
+
+</RelativeLayout>

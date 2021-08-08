@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/main_gradient"
+        android:id="@+id/toolbar"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:id="@+id/go_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Cart"
+            android:textSize="20sp"
+            android:textColor="@color/colorOnPrimary"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cart_rv" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/skeleton_container"
+        android:background="@color/colorOnPrimary"
+        android:layout_below="@id/toolbar">
+
+
+        <include layout="@layout/products_skeleton_loading"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/not_found_container"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorOnPrimary"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="3dp"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@android:color/transparent"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/empty_box" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9F9F9F"
+            android:textSize="16sp"
+            android:text="Your cart is empty !"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

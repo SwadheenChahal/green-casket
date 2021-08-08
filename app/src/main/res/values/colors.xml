@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--  <color name="colorPrimary">#FF3D64</color>
+    <color name="colorPrimaryVariant">#EF5A35</color> -->
+
+    <color name="colorPrimary">#43A047</color>
+    <color name="colorPrimaryVariant">#449846</color>
+
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <color name="colorOfPrimary">#66FFFFFF</color>
+
+</resources>

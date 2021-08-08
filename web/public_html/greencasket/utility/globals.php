@@ -1,0 +1,12 @@
+<?
+$get="1";
+$set="2";
+$remove_cart_item="7648";
+$plush_cart_item="46546";
+$minus_cart_item="565";
+$place_cart_orders="3453";
+$place_order="6556";
+$count_cart_items="5685";
+$for_products="54354";
+$for_search="4584";
+?>

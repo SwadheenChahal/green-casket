@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorOnPrimary"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="15dp"
+        android:text="Rate Product"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BDBDBD"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:id="@+id/container_loading"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@android:color/transparent"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/rating_skeleton" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_container"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/product_image"
+                android:padding="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/product_image"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please tell us how was your experience with this product ?"
+                    android:textColor="@android:color/black"
+                    android:maxLines="2"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="16sp" />
+
+
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:layout_marginTop="10dp"
+                    android:progressTint="@color/colorPrimary"
+                    android:rating="0"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:transformPivotX="0dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/btn_cancel"
+
+                    android:layout_weight="1"
+                    android:background="#EAEAEA"
+                    android:textAllCaps="false"
+                    android:text="Cancel" />
+
+
+                <Button
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorOnPrimary"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/btn_rate"
+                    android:layout_marginLeft="5dp"
+                    android:text="Submit" />
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
