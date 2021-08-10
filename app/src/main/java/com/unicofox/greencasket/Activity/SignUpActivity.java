@@ -27,7 +27,6 @@ public class SignUpActivity extends AppCompatActivity {
     String message = null;
     ProgressDialog dialog;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

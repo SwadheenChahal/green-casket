@@ -29,7 +29,7 @@ public class Config {
     public static String USER_EMAIL = "";
     public static List<ModelMain> PRODUCTS_LIST = new ArrayList<>();
 
-    public static String API_KEY = "http://greencasket.in/greencasket/",
+    public static String API_KEY = "https://greencasket.in/greencasket/",
             API_SIGNUP = API_KEY + "api/signup.php",
             API_LOGIN = API_KEY + "api/login.php",
             API_PRODUCTS = API_KEY + "api/products.php",
